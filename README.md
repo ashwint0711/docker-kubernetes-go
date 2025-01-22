@@ -53,7 +53,7 @@ I deployed the `hello-world` Docker container using Kubernetes. The `hello-world
   ```bash
   docker run hello-world
 ```
-### Deploying with Kubernetes
+### Deploying with Kubernetes
 1. **Apply the Kubernetes Configuration**:
   The hello-world.yaml file contains deployment specifications. Used it to deploy the application to a Kubernetes cluster:
 ```bash
@@ -61,17 +61,8 @@ kubectl apply -f hello-world-docker/hello-world.yaml
 ```
 
 -----------------
-## Ping Pong Service in Python
 
-## Overview
-This project demonstrates a Python Flask application that listens on port `5000` and responds to a `ping` request with `pong`. The project includes the following components:  
-1. A Python program for the ping-pong service.  
-2. A Dockerfile to build a Docker image for the service.  
-3. A `ping-pong-deployment.yaml` file to deploy the service in a Kubernetes cluster.  
-4. A Makefile to automate the build, tag, push, and deploy processes.
-
----------------------
-# Ping Pong Service
+## Ping Pong Service
 
 This service implements a simple Python script that responds to the `/ping` endpoint with the message `"pong"`. The service listens on port `5000`.
 
