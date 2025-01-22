@@ -104,12 +104,3 @@ This file automates the following tasks:
 - Building the Docker image for the Ping Pong service.
 - Deploying the containerized application to Kubernetes.
 
-## How to Use
-1. Clone the repository and navigate to the `ping-pong-python` folder.
-2. Build the Docker image using the `Makefile` or manually with the `Dockerfile`.
-3. Deploy the service to Kubernetes using the `ping-pong-deployment.yaml` file.
-
----
-Feel free to contribute or raise issues in the repository!
-
-
