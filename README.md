@@ -3,7 +3,7 @@
 This project demonstrates the basic workings of Docker and Kubernetes, focusing on:  
 1. A simple Hello-world Docker container.  
 2. A Python Flask ping-pong service that responds to "ping".
-
+3. A Go program for pattern detection in string.
 ---
 
 ## Setting Up Docker and Kubernetes
@@ -103,4 +103,20 @@ This file contains the Kubernetes deployment configuration for the Ping Pong ser
 This file automates the following tasks:
 - Building the Docker image for the Ping Pong service.
 - Deploying the containerized application to Kubernetes.
+
+# Go Program: Pattern Detection
+
+## Overview
+This program checks if a string follows a specific pattern:
+- Starts with `"i"` or `"I"`.
+- Contains `"a"` or `"A"` anywhere in the middle.
+- Ends with `"n"` or `"N"`.
+
+## Code Location
+The code for this program is located in the `main.go` file.
+
+## How It Works
+1. Reads an input string.
+2. Evaluates the string against the defined pattern.
+3. Returns whether the string matches the pattern.
 
