@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ping-pong-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: ping-pong-app
+  template:
+    metadata:
+      labels:
+        app: ping-pong-app
+    spec:
+      containers:
+      - image: ashwin0711/ping-pong-app
+        name: ping-pong-app-container
+        ports:
+         - containerPort: 5000
